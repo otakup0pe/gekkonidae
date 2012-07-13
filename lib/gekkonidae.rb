@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
-require 'graphite'
-require 'widgets/number'
-require 'widgets/text'
-require 'charts/linechart'
+require File.dirname(__FILE__) + '/graphite'
+require File.dirname(__FILE__) + '/widgets/number'
+require File.dirname(__FILE__) + '/widgets/text'
+require File.dirname(__FILE__) + '/charts/linechart'
 
 class Gekkonidae < Sinatra::Base
   def initialize(conf)
